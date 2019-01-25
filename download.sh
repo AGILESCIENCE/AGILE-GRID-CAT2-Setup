@@ -9,6 +9,7 @@ if [ "$2" != "-t" ] ; then
 	TAG_SCITOOLS=BUILD25
 	TAG_DEEPVAR=v1.0.0
 	TAG_SCRCAT2=v1.0.0
+	TAG_WILKS=v1.0.0
 fi
 
 echo "--------------"
@@ -25,7 +26,7 @@ echo "--------------"
 git clone https://$1@github.com/ASTRO-EDU/DeepVar.git 
 cd DeepVar
 if [ "$2" != "-t" ]; then
-        #git checkout $TAG_DEEPVAR
+        git checkout $TAG_DEEPVAR
 else
         echo "Use master version"
 fi
@@ -42,4 +43,12 @@ else
 fi
 cd ..
 
+git clone https://$1@github.com/ASTRO-EDU/WilksScripts.git
+cd WilksScripts
+if [ "$2" != "-t" ]; then
+        git checkout $TAG_WILKS
+else
+        echo "Use master version"
+fi
+cd ..
 
