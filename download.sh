@@ -25,7 +25,7 @@ echo "--------------"
 git clone https://$1@github.com/ASTRO-EDU/DeepVar.git 
 cd DeepVar
 if [ "$2" != "-t" ]; then
-        git checkout $TAG_DEEPVAR
+        #git checkout $TAG_DEEPVAR
 else
         echo "Use master version"
 fi
