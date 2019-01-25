@@ -7,9 +7,9 @@ trap exit ERR
 if [ "$2" != "-t" ] ; then
 	echo "USE TAGS"
 	TAG_SCITOOLS=BUILD25
-	TAG_DEEPVAR=v1.0.0
-	TAG_SCRCAT2=v1.0.0
-	TAG_WILKS=v1.0.0
+	TAG_DEEPVAR=BUILD3
+	TAG_SCRCAT2=v1.0.2
+	TAG_WILKS=v1.0.1
 fi
 
 echo "--------------"
