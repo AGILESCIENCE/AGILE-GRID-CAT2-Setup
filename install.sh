@@ -32,8 +32,7 @@ cd AGILE-GRID-ScienceTools-Setup
 cd ..
 
 echo "install DeepVar in $DEEPVAR - manual setup needed"
-test -d $DEEPVAR || mkdir -p $DEEPVAR
-cp -rf DeepVar/* $DEEPVAR
+cp -rf DeepVar $DEEPVAR
 
 echo "install AGILE-GRID-scripts-cat2"
 cd AGILE-GRID-scripts-cat2
