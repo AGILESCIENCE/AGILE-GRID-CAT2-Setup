@@ -1,11 +1,11 @@
-source /opt/module/root_v5.34.24
 
-export AGILE=/opt/prod/agile-B25-r5-cat2
+export AGILE=~/local.cat2
 export AGILEPIPE=$AGILE/AGILEPIPE
 export DEEPVAR=$AGILE/DeepVar
 export CFITSIO=/usr/local
-export GSL=/usr/local
-export OPENCV=/usr/lib64
+export ROOTSUS=/opt/local
+export GSL=/opt/local
+export OPENCV=/opt/local
 export LD_LIBRARY_PATH=/usr/lib:/usr/lib64:$AGILE/lib:$LD_LIBRARY_PATH
 export PATH=$AGILE/bin:$AGILE/scripts:$PATH
 export PFILES=$AGILE/share:$PFILES
