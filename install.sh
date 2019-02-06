@@ -9,7 +9,7 @@ if [ -z "$AGILEPIPE" ] || [ -z $(env | grep "AGILEPIPE=") ] ; then
     echo "AGILEPIPE environment variable not set. Use $AGILEPIPE"
 fi
 if [ -z "$DEEPVAR" ] || [ -z $(env | grep "DEEPVAR=") ] ; then
-    echo "AGILE environment variable not set. Abort."
+    echo "DEEPVAR environment variable not set. Abort."
     exit
 fi
 if [ -z "$CFITSIO" ] || [ -z $(env | grep "CFITSIO=") ] ; then
