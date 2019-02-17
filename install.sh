@@ -30,7 +30,6 @@ cd AGILE-GRID-ScienceTools-Setup
 cd ..
 
 CURDIR=$PWD
-
 echo "install DeepVar in $DEEPVAR - manual setup needed"
 cp -rf DeepVar $DEEPVAR
 cd $DEEPVAR
