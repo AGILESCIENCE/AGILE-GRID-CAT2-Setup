@@ -25,8 +25,6 @@ fi
 
 echo "install BUILD Science Tools"
 cd AGILE-GRID-ScienceTools-Setup
-./downloadScienceTools.sh
-./downloadIRF.sh
 ./installScienceTools.sh
 ./installIRF.sh 
 cd ..
@@ -36,7 +34,6 @@ CURDIR = $PWD
 echo "install DeepVar in $DEEPVAR - manual setup needed"
 cp -rf DeepVar $DEEPVAR
 cd $DEEPVAR
-./download_modules.sh
 ./install.sh
 cd $CURDIR
 

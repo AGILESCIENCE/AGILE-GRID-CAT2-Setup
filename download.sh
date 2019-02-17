@@ -20,6 +20,9 @@ if [ "$2" != "-t" ]; then
 else
         echo "Use master version"
 fi
+cd AGILE-GRID-ScienceTools-Setup
+./downloadScienceTools.sh
+./downloadIRF.sh
 cd ..
 
 echo "--------------"
@@ -30,6 +33,8 @@ if [ "$2" != "-t" ]; then
 else
         echo "Use master version"
 fi
+cd DeepVar
+./download_modules.sh
 cd ..
 
 
