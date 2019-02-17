@@ -31,7 +31,7 @@ cd AGILE-GRID-ScienceTools-Setup
 ./installIRF.sh 
 cd ..
 
-CURDIR = $PWD
+CURDIR=$PWD
 
 echo "install DeepVar in $DEEPVAR - manual setup needed"
 cp -rf DeepVar $DEEPVAR
