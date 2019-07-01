@@ -13,20 +13,19 @@ if [ "$2" != "-t" ] ; then
 fi
 
 echo "--------------"
-#git clone https://github.com/AGILESCIENCE/AGILE-GRID-ScienceTools-Setup.git
+git clone https://github.com/AGILESCIENCE/AGILE-GRID-ScienceTools-Setup.git
 cd AGILE-GRID-ScienceTools-Setup
 if [ "$2" != "-t" ]; then
         git checkout $TAG_SCITOOLS
 else
         echo "Use master version"
 fi
-#./downloadScienceTools.sh
-#./downloadIRF.sh
+./downloadScienceTools.sh
+./downloadIRF.sh
 cd ..
 
 echo "--------------"
 git clone git@github.com:ASTRO-EDU/DeepVar.git 
-#git clone https://$1@github.com/ASTRO-EDU/DeepVar.git
 cd DeepVar
 if [ "$2" != "-t" ]; then
         git checkout $TAG_DEEPVAR
@@ -39,7 +38,6 @@ cd ..
 
 echo "--------------"
 git clone git@github.com:ASTRO-EDU/AGILE-GRID-scripts-cat2.git 
-#git clone https://$1@github.com/ASTRO-EDU/AGILE-GRID-scripts-cat2.git
 cd AGILE-GRID-scripts-cat2
 if [ "$2" != "-t" ]; then
 	git checkout $TAG_SCRCAT2
@@ -49,7 +47,6 @@ fi
 cd ..
 
 git clone git@github.com:ASTRO-EDU/WilksScripts.git
-#git clone https://$1@github.com/ASTRO-EDU/WilksScripts.git
 cd WilksScripts
 if [ "$2" != "-t" ]; then
         git checkout $TAG_WILKS
