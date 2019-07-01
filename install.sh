@@ -41,8 +41,12 @@ cd AGILE-GRID-scripts-cat2
 ./install.sh
 cd ..
 
-echo "intall WilksScripts in $AGILE/scripts"
+echo "install WilksScripts in $AGILE/scripts"
 test -d $AGILE/scripts || mkdir -p $AGILE/scripts
 cd WilksScripts
 cp -rf WilksStd $AGILE/scripts
 cp -rf WilksGen $AGILE/scripts
+cd ..
+
+echo "install profile"
+cp -rf profile $AGILE/
