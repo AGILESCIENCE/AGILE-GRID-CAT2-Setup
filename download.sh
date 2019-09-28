@@ -17,10 +17,11 @@ git clone https://github.com/AGILESCIENCE/AGILE-GRID-ScienceTools-Setup.git
 cd AGILE-GRID-ScienceTools-Setup
 if [ "$2" != "-t" ]; then
         git checkout $TAG_SCITOOLS
+        ./downloadScienceTools.sh
 else
         echo "Use master version"
+        ./downloadScienceTools_notag.sh
 fi
-./downloadScienceTools.sh
 ./downloadIRF.sh
 cd ..
 
@@ -29,10 +30,11 @@ git clone git@github.com:ASTRO-EDU/DeepVar.git
 cd DeepVar
 if [ "$2" != "-t" ]; then
         git checkout $TAG_DEEPVAR
+        ./download_modules.sh
 else
         echo "Use master version"
+        ./download_modules.sh a -t
 fi
-./download_modules.sh
 cd ..
 
 
