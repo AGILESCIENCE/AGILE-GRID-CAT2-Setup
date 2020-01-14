@@ -1,5 +1,5 @@
 
-export AGILE=~/local.B252AGL
+export AGILE=~/local.agile-B25-r6-cat2-B6
 export AGILEPIPE=$AGILE/AGILEPIPE
 export DEEPVAR=$AGILE/DeepVar
 export CFITSIO=/opt/local
